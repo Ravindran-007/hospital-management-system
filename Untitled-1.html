@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+        }
+        nav ul li {
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+    <script>
+        function showAlert(section) {
+            alert("You clicked on " + section + " section!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hospital Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Our Hospital</h2>
+        <p>Providing quality healthcare with expert professionals.</p>
+        <button class="btn" onclick="showAlert('Home')">Learn More</button>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Emergency Care</li>
+            <li>Outpatient Services</li>
+            <li>Pharmacy</li>
+            <li>Laboratory Tests</li>
+        </ul>
+        <button class="btn" onclick="showAlert('Services')">View Services</button>
+    </section>
+    
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <p>Meet our team of expert healthcare professionals.</p>
+        <button class="btn" onclick="showAlert('Doctors')">Meet Doctors</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@hospital.com</p>
+        <p>Phone: +123 456 7890</p>
+        <button class="btn" onclick="showAlert('Contact')">Get in Touch</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hospital Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
